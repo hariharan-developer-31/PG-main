@@ -11,9 +11,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "StaySync | Premium PG & Hostel Management SaaS",
+  title: "STACK | Premium PG & Hostel Management SaaS",
   description:
-    "Enterprise-grade, multi-property PG and Hostel Management platform for owners, managers, and tenants. Effortless room allocation, rent tracking, automated billing, and operations.",
+    "Enterprise-grade, multi-property PG and Hostel Management platform for owners, managers, and tenants. Powered by STACK.",
   icons: {
     icon: "/favicon.ico",
   },

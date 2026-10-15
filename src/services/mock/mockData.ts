@@ -42,11 +42,11 @@ export const initialOrganization: Organization = {
 export const mockUsers: Record<string, UserProfile> = {
   SUPER_ADMIN: {
     id: "user-super-admin",
-    email: "admin@staysync.com",
+    email: "admin@stack.com",
     full_name: "Platform SuperAdmin",
     phone: "+91 99999 00000",
     role: "SUPER_ADMIN",
-    organization_id: "org-staysync-cloud",
+    organization_id: "org-stack-cloud",
     avatar_url: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
     created_at: "2026-01-01T00:00:00Z",
     updated_at: "2026-10-01T00:00:00Z",
@@ -990,7 +990,7 @@ export const initialSupportTickets: SaaSSupportTicket[] = [
     category: "FEATURE_REQUEST",
     priority: "LOW",
     status: "OPEN",
-    message: "Can we link our eSSL fingerprint turnstiles directly to StaySync visitor and resident attendance?",
+    message: "Can we link our eSSL fingerprint turnstiles directly to STACK visitor and resident attendance?",
     created_at: "2026-10-14T16:20:00Z",
     updated_at: "2026-10-14T16:20:00Z",
   },

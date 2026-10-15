@@ -147,7 +147,7 @@ export default function PaymentsPage() {
         r.due_date,
         r.status,
       ]);
-      downloadCSV(headers, rows, `staysync_rent_schedules_${selectedMonth}.csv`);
+      downloadCSV(headers, rows, `stack_rent_schedules_${selectedMonth}.csv`);
     } else {
       const headers = ["Receipt Number", "Tenant Name", "Amount", "Method", "Date", "Transaction ID", "Status", "Notes", "Authorized By"];
       const rows = filteredPayments.map((p) => [
@@ -161,7 +161,7 @@ export default function PaymentsPage() {
         `"${p.notes || ""}"`,
         `"${p.created_by_name || ""}"`,
       ]);
-      downloadCSV(headers, rows, `staysync_payments_${selectedMonth}.csv`);
+      downloadCSV(headers, rows, `stack_payments_${selectedMonth}.csv`);
     }
   };
 

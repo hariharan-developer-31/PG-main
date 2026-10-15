@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/Input";
 import { Card, CardContent } from "@/components/ui/Card";
 import {
-  Sparkles,
+  Layers,
   ArrowRight,
   ArrowLeft,
   CheckCircle2,
@@ -55,11 +55,11 @@ export default function SignupPage() {
         {/* Header */}
         <div className="text-center space-y-2">
           <Link href="/" className="inline-flex items-center gap-2.5">
-            <div className="w-10 h-10 rounded-xl bg-[#2563EB] flex items-center justify-center text-white shadow-md shadow-blue-500/25">
-              <Sparkles className="w-5 h-5" />
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#2563EB] to-[#1D4ED8] flex items-center justify-center text-white shadow-md shadow-blue-500/25">
+              <Layers className="w-5 h-5" />
             </div>
             <span className="text-2xl font-extrabold tracking-tight text-[#0F172A]">
-              StaySync
+              STACK
             </span>
           </Link>
           <h1 className="text-xl font-bold tracking-tight text-[#0F172A]">

@@ -1,4 +1,4 @@
-# StaySync — Enterprise PG & Hostel Management SaaS
+# STACK — Enterprise PG & Hostel Management SaaS
 
 > **A Next-Generation, Multi-Property SaaS Platform for PG Owners, Hostel Operators, Facility Managers, and Residents.**
 
@@ -54,7 +54,7 @@ Built with Next.js 16 (App Router), React 19, TypeScript, Tailwind CSS, and a de
 
 ## 🏗️ Architecture & Decoupled Service Layer
 
-StaySync is architected to guarantee that the UI never directly couples to database implementations or vendor-specific SDKs:
+STACK is architected to guarantee that the UI never directly couples to database implementations or vendor-specific SDKs:
 
 ```
 ┌────────────────────────────────────────────────────────┐
@@ -93,8 +93,8 @@ StaySync is architected to guarantee that the UI never directly couples to datab
 
 ### 2. Installation
 ```bash
-git clone https://github.com/your-org/staysync-pg.git
-cd staysync-pg
+git clone https://github.com/hariharan-developer-31/PG-main.git
+cd PG-main
 npm install
 ```
 

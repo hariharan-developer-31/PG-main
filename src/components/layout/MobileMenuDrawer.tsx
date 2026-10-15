@@ -22,6 +22,7 @@ import {
   Settings,
   LogOut,
   ShieldCheck,
+  Layers,
   Sparkles,
 } from "lucide-react";
 
@@ -64,10 +65,10 @@ export function MobileMenuDrawer({ isOpen, onClose }: MobileMenuDrawerProps) {
         <div className="h-16 px-5 border-b border-[#E2E8F0] flex items-center justify-between">
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 rounded-lg bg-[#2563EB] flex items-center justify-center text-white">
-              <Sparkles className="w-4 h-4" />
+              <Layers className="w-4 h-4" />
             </div>
             <div>
-              <p className="font-bold text-sm text-[#0F172A]">StaySync SaaS</p>
+              <p className="font-bold text-sm text-[#0F172A]">STACK SaaS</p>
               <p className="text-[10px] text-[#64748B]">{organization?.name}</p>
             </div>
           </div>

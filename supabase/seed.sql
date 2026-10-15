@@ -1,5 +1,5 @@
 -- ==============================================================================
--- STAYSYNC PG SAAS DEMO SEED DATA
+-- STACK PG SAAS DEMO SEED DATA
 -- Fictional dataset for Urban Nest PG, Green View PG, and Blue Haven PG
 -- ==============================================================================
 

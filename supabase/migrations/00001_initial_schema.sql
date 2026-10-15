@@ -1,5 +1,5 @@
 -- ==============================================================================
--- STAYSYNC PG MANAGEMENT SAAS: PRODUCTION DATABASE SCHEMA (POSTGRESQL / SUPABASE)
+-- STACK PG MANAGEMENT SAAS: PRODUCTION DATABASE SCHEMA (POSTGRESQL / SUPABASE)
 -- ==============================================================================
 
 -- 1. EXTENSIONS

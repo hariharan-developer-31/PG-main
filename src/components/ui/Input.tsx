@@ -20,14 +20,14 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
         {label && (
           <label
             htmlFor={inputId}
-            className="block text-xs font-semibold tracking-tight text-[#0F172A] uppercase"
+            className="block text-xs font-semibold text-slate-700 tracking-normal"
           >
             {label}
           </label>
         )}
         <div className="relative flex items-center">
           {leftIcon && (
-            <div className="absolute left-3 text-[#94A3B8] pointer-events-none flex items-center">
+            <div className="absolute left-3.5 text-slate-400 pointer-events-none flex items-center justify-center">
               {leftIcon}
             </div>
           )}
@@ -35,10 +35,10 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
             id={inputId}
             ref={ref}
             className={cn(
-              "w-full h-10 px-3.5 text-sm bg-white border rounded-xl text-[#0F172A] placeholder-[#94A3B8] transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-[#2563EB]",
+              "w-full h-10 px-3.5 text-sm bg-white border rounded-xl text-slate-900 placeholder:text-slate-400 shadow-2xs transition-all duration-150 focus:outline-none focus:ring-4 focus:ring-blue-500/10 focus:border-blue-600",
               error
-                ? "border-[#DC2626] focus:border-[#DC2626] focus:ring-red-500/20"
-                : "border-[#E2E8F0] hover:border-slate-300",
+                ? "border-red-500 focus:border-red-600 focus:ring-red-500/10"
+                : "border-slate-200 hover:border-slate-300",
               leftIcon && "pl-10",
               rightIcon && "pr-10",
               className
@@ -46,13 +46,13 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
             {...props}
           />
           {rightIcon && (
-            <div className="absolute right-3 text-[#94A3B8] flex items-center">
+            <div className="absolute right-3.5 text-slate-400 flex items-center justify-center">
               {rightIcon}
             </div>
           )}
         </div>
-        {error && <p className="text-xs text-[#DC2626] font-medium">{error}</p>}
-        {hint && !error && <p className="text-xs text-[#64748B]">{hint}</p>}
+        {error && <p className="text-xs text-red-600 font-medium">{error}</p>}
+        {hint && !error && <p className="text-xs text-slate-500">{hint}</p>}
       </div>
     );
   }

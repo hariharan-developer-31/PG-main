@@ -56,7 +56,9 @@ export function TopNav({
     if (path.startsWith("/reports")) return "Analytics & Reports";
     if (path.startsWith("/announcements")) return "Announcements";
     if (path.startsWith("/settings")) return "Settings";
-    return "PG SaaS";
+    if (path.startsWith("/superadmin")) return "SaaS Super Admin";
+    if (path.startsWith("/portal")) return "Tenant Portal";
+    return "STACK SaaS";
   };
 
   const selectedProperty = properties.find((p) => p.id === selectedPropertyId);
@@ -67,7 +69,7 @@ export function TopNav({
       <div className="flex items-center gap-3">
         <div>
           <div className="hidden sm:flex items-center gap-1.5 text-xs text-[#64748B] mb-0.5">
-            <span>StaySync</span>
+            <span className="font-semibold text-blue-600">STACK</span>
             <span>/</span>
             <span className="text-[#0F172A] font-medium">{getPageTitle(pathname)}</span>
           </div>
@@ -98,7 +100,7 @@ export function TopNav({
             className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-[#E2E8F0] hover:border-slate-300 bg-white text-xs font-semibold text-[#0F172A] transition-colors cursor-pointer"
           >
             <Building className="w-3.5 h-3.5 text-[#2563EB]" />
-            <span className="max-w-[120px] truncate">
+            <span className="hidden sm:inline max-w-[120px] truncate">
               {selectedPropertyId === "ALL" ? "All Properties" : selectedProperty?.name || "Property"}
             </span>
           </button>

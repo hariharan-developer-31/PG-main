@@ -23,6 +23,7 @@ import {
   ChevronRight,
   LogOut,
   Sparkles,
+  Layers,
   ShieldCheck,
   ShieldAlert,
   Home,
@@ -71,12 +72,12 @@ export function Sidebar() {
         {!collapsed ? (
           <Link href="/dashboard" className="flex items-center gap-2.5">
             <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#2563EB] to-[#1D4ED8] flex items-center justify-center text-white shadow-sm shadow-blue-500/25">
-              <Sparkles className="w-5 h-5" />
+              <Layers className="w-5 h-5" />
             </div>
             <div>
               <div className="flex items-center gap-1.5">
                 <span className="font-extrabold text-base tracking-tight text-[#0F172A]">
-                  StaySync
+                  STACK
                 </span>
                 <span className="text-[10px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded-sm bg-blue-50 text-[#2563EB]">
                   SaaS
@@ -90,7 +91,7 @@ export function Sidebar() {
         ) : (
           <Link href="/dashboard" className="mx-auto">
             <div className="w-9 h-9 rounded-xl bg-[#2563EB] flex items-center justify-center text-white shadow-sm">
-              <Sparkles className="w-5 h-5" />
+              <Layers className="w-5 h-5" />
             </div>
           </Link>
         )}

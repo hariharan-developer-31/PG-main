@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import { useAuth } from "@/features/auth/AuthContext";
 import { Button } from "@/components/ui/Button";
 import {
-  Sparkles,
+  Layers,
   ArrowRight,
   ShieldCheck,
   Building2,
@@ -39,11 +39,11 @@ export default function LandingPage() {
       {/* Top Bar */}
       <header className="h-20 border-b border-slate-800/80 px-6 sm:px-12 flex items-center justify-between max-w-7xl w-full mx-auto">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-[#2563EB] flex items-center justify-center text-white shadow-lg shadow-blue-500/25">
-            <Sparkles className="w-5 h-5" />
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#2563EB] to-[#1D4ED8] flex items-center justify-center text-white shadow-lg shadow-blue-500/25">
+            <Layers className="w-5 h-5" />
           </div>
           <div>
-            <span className="text-xl font-extrabold tracking-tight">StaySync</span>
+            <span className="text-xl font-extrabold tracking-tight">STACK</span>
             <span className="ml-2 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20">
               SaaS Edition
             </span>
@@ -180,7 +180,7 @@ export default function LandingPage() {
 
       {/* Footer */}
       <footer className="border-t border-slate-800/80 py-8 px-6 text-center text-xs text-slate-500">
-        <p>© 2026 StaySync Technologies Pvt Ltd. All rights reserved. Built for high-volume PG & Co-Living portfolios.</p>
+        <p>© 2026 STACK Technologies Pvt Ltd. All rights reserved. Built for high-volume PG & Co-Living portfolios.</p>
       </footer>
     </div>
   );

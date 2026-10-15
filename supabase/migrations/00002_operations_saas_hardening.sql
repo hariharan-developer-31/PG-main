@@ -1,5 +1,5 @@
 -- ==============================================================================
--- STAYSYNC PG MANAGEMENT SAAS: MIGRATION 00002 (OPERATIONS, RBAC & STORAGE HARDENING)
+-- STACK PG MANAGEMENT SAAS: MIGRATION 00002 (OPERATIONS, RBAC & STORAGE HARDENING)
 -- ==============================================================================
 
 -- 1. RBAC PERMISSIONS SCHEMA

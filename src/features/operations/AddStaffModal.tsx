@@ -151,7 +151,7 @@ export function AddStaffModal({
             </label>
             <Input
               type="email"
-              placeholder="e.g. ramesh@staysync.com"
+              placeholder="e.g. ramesh@stackpg.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />

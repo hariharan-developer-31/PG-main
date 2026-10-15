@@ -1,6 +1,6 @@
-# StaySync — Production Deployment & Migration Guide
+# STACK — Production Deployment & Migration Guide
 
-This document outlines the complete deployment procedure for **StaySync PG Management SaaS**, covering:
+This document outlines the complete deployment procedure for **STACK PG Management SaaS**, covering:
 1. **Cloud Deployment (Vercel + Supabase)**
 2. **Database Hardening & Storage Security**
 3. **Architecture Migration: Supabase $\to$ Node.js/Express + MySQL on Hostinger**
@@ -38,7 +38,7 @@ Ensure the following buckets are present in Supabase Storage:
    NEXT_PUBLIC_SUPABASE_URL=https://<your-project-ref>.supabase.co
    NEXT_PUBLIC_SUPABASE_ANON_KEY=<your-anon-public-key>
    SUPABASE_SERVICE_ROLE_KEY=<your-service-role-key-server-only>
-   NEXT_PUBLIC_APP_NAME="StaySync SaaS"
+   NEXT_PUBLIC_APP_NAME="STACK SaaS"
    NEXT_PUBLIC_APP_URL=https://your-domain.com
    ```
 4. Click **Deploy**. Vercel will build and distribute all 23 static and dynamic routes globally across edge locations.
@@ -47,7 +47,7 @@ Ensure the following buckets are present in Supabase Storage:
 
 ## 2. Security & RLS Compliance
 
-StaySync enforces multi-tenant isolation via **Row Level Security (RLS)** in PostgreSQL:
+STACK enforces multi-tenant isolation via **Row Level Security (RLS)** in PostgreSQL:
 
 - **Organization Tenant Isolation:**
   ```sql
@@ -68,7 +68,7 @@ StaySync enforces multi-tenant isolation via **Row Level Security (RLS)** in Pos
 
 ## 3. Architecture Migration: Supabase $\to$ Hostinger (Node.js + Express + MySQL)
 
-A core requirement of StaySync is that **the frontend never directly depends on Supabase client calls or internal data formats**. All data fetching flows through the decoupled interface layer:
+A core requirement of STACK is that **the frontend never directly depends on Supabase client calls or internal data formats**. All data fetching flows through the decoupled interface layer:
 
 $$\text{UI Layer} \longrightarrow \text{Service Layer} \longrightarrow \text{API / Database Layer}$$
 
@@ -182,7 +182,7 @@ To switch the Next.js frontend from Supabase/Mock to the Hostinger Node.js backe
 - **Database Backup Cron (Hostinger MySQL / PostgreSQL):**
   Schedule daily automated dumps:
   ```bash
-  mysqldump -u staysync_user -p staysync_prod | gzip > /backups/staysync_$(date +\%F).sql.gz
+  mysqldump -u stack_user -p stack_prod | gzip > /backups/stack_$(date +\%F).sql.gz
   ```
 - **Prerendering & Caching:**
   All 23 dashboard and management routes leverage Next.js static generation with on-demand revalidation.
